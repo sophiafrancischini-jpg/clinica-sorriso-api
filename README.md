@@ -13,3 +13,34 @@ sábados de manhã para clientes sem a
 classificação VIP, operando sob uma
 interface de alta performance nas
 cores Azul Marinho e Prata.
+
+# MER - Modelo Entidade-Relacionamento
+
+## Entidades e Atributos
+
+PACIENTE
+
+ id_paciente (PK)**
+nome
+ e_vip
+
+DENTISTA
+
+id_dentista (PK)**
+ nome
+
+AGENDAMENTO
+
+id_agendamento (PK)**
+ data_hora
+status
+id_paciente (FK)**
+id_dentista (FK)**
+
+PRONTUARIO
+
+**id_prontuario (PK)**
+registro_clinico
+ **id_agendamento (FK)**
+
+![Diagrama DER](./database/Diagrama%20sem%20nome.drawio.png)
